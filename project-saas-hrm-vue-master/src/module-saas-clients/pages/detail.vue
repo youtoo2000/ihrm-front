@@ -58,7 +58,7 @@ export default {
   },
   // 创建完毕状态
   created() {
-    var id = this.$route.params.id   
+    var id = this.$route.params.id
     this.detail(id);
   }
 }

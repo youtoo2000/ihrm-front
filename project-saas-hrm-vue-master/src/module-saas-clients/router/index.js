@@ -22,17 +22,17 @@ export default [
     },
     children: [
       {
-        path: 'index',//请求地址   -- /saas-cliens/index
-        component: _import('saas-clients/pages/index'),//跳转的vue视图
+        path: 'index',  //请求地址   -- /saas-cliens/index
+        component: _import('saas-clients/pages/index'), //跳转的vue视图
         name: 'saas-clients-index',
         meta: {title: 'SAAS企业', icon: 'component', noCache: true}
       },
       {
-          path: 'details/:id',
-          component: _import('saas-clients/pages/detail'), //跳转的vue视图
-          name: 'saas-clients-detail',
-          meta: {title: 'SAAS企业详情', icon: 'component', noCache: true}
-        }
+        path: 'details/:id',
+        component: _import('saas-clients/pages/detail'), //跳转的vue视图
+        name: 'saas-clients-detail',
+        meta: {title: 'SAAS企业详情', icon: 'component', noCache: true}
+      }
     ]
   }
 ]

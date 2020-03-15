@@ -36,7 +36,6 @@ export default {
                     this.id = id;
                     this.roles = res.data.data
                     this.roleFormVisible=true
-                    
                 })
             })
         },

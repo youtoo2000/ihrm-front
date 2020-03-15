@@ -58,7 +58,6 @@ export default {
       //调用API发起请求
       //res=响应数据
       list().then(res => {
-        //console.log(res)
         this.dataList = res.data.data
       })
     }

@@ -341,6 +341,17 @@ export function getBlob(response) {
   link.download = filename
   link.click()
 }
+export function getBlobPdf(response) {
+	  let blob = new Blob([response.data], {
+		  responseType: 'blob',
+	  })
+	  let link = document.createElement('a')
+	  link.href = window.URL.createObjectURL(blob)
+	  //var filename = decodeURI(response.headers.filename)
+	   link.download = 'report.pdf'
+	  //link.download = filename
+	  link.click()
+	}
 // 图片 blob 流转化为可用 src
 export function imgHandle(obj) {
   return window.URL.createObjectURL(obj)
